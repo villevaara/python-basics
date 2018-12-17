@@ -1,6 +1,6 @@
 # Part 2 - Basic concepts in programming
 
-**Remember:** Read everything and don't skip ahead!
+> **Remember:** Read everything and don't skip ahead!
 
 This part will introduce the basic rationale behind a program and introduce some of its key components. Next, we'll try those concepts in practice with small coding exercises. After that we will dive into a basic example where these are applied in quantitative literary study.
 
@@ -11,9 +11,9 @@ There's first a short ["theory" part](#concepts-to-be-covered), and then some [e
 3. Unless you feel you really mastered everything on first go, continue on to the additional exercises [here](./2B_more_exercises.md).
 4. Finally move on to a demonstration of the concepts introduced in practice: [Dostoyevsky -text analysis part](./suddenly.md).
 
-**Note:** We'll occasionally use the term _script_ here. That term refers to the program code that we're writing.
+> **Note:** We'll occasionally use the term _script_ here. That term refers to the program code that we're writing.
 
-**Note:** At some point you'll want to use a bit more sophisticated editor than Notepad, TextEdit, etc. [See here for alternatives.](./editors.md) That point might as well be now.
+> **Note:** At some point you'll want to use a bit more sophisticated editor than Notepad, TextEdit, etc. [See here for alternatives.](./editors.md) That point might as well be now.
 
 If the following is trivial for you, skip straight into the [Dostoyevsky -text analysis part](./suddenly.md). 
 
@@ -121,11 +121,11 @@ This is now little bit complicated looking, but it actually would do the job. Le
 
 ## Small exercises
 
-**Note:** Each example here is separate. So, generally, start a new file per exercise, and dont just paste the new code after old exercises.
+> **Note:** Each example here is separate. So, generally, start a new file per exercise, and dont just paste the new code after old exercises.
 
 For each of these, create a script-file, like you did previously with the _Hello World!_ -task, and run that script with Python, as you did previously. We'll walk through the process once again in the first example.
 
-**Note:** Code can become messy fast. There are various ways to combat that, and one of those is called commenting. In the following excercises you'll notice explanatory text on rows preceded by the character '#'. That's the way commenting is done in Python. Everything on the row after that character is ignored by the Python-interpreter.
+> **Note:** Code can become messy fast. There are various ways to combat that, and one of those is called commenting. In the following excercises you'll notice explanatory text on rows preceded by the character '#'. That's the way commenting is done in Python. Everything on the row after that character is ignored by the Python-interpreter.
 
 ### Variables and values 1
 
@@ -149,9 +149,9 @@ Save it with a name of your choosing (`task1.py` for example), and run it in ter
 `python3 task1.py` (or `python task1.py` if Python 3 runs under that command for you.)
 If you forgot how to use the terminal, refer back to the materials for part 1. 
 
-**Note:** It's a good idea to keep your program scripts (and other files too) organized. So, you might want to save the scripts you'll be creating here under a common directory (for example `[your home directory]/projects/python-basics/`).
+> **Note:** It's a good idea to keep your program scripts (and other files too) organized. So, you might want to save the scripts you'll be creating here under a common directory (for example `[your home directory]/projects/python-basics/`).
 
-**Note:** Another term for running a script is "execute". We'll probably use that in the instructions too, just to break the monotony.
+> **Note:** Another term for running a script is "execute". We'll probably use that in the instructions too, just to break the monotony.
 
 ### Variables and values 2
 
@@ -193,7 +193,7 @@ apples_per_kid =
 print("Apples per kid: " + str(apples_per_kid))
 ```
 
-**Note:** There is a `str()` -command inside the print function. This is called _casting_. What happened there was converting a value in one variable type to another, namely making a _string_, that is, text, out of a _float_, a number. This was necessary so that we could combine it with the other _string_ -type variable, the text "Apples per kid: ".
+> **Note:** There is a `str()` -command inside the print function. This is called _casting_. What happened there was converting a value in one variable type to another, namely making a _string_, that is, text, out of a _float_, a number. This was necessary so that we could combine it with the other _string_ -type variable, the text "Apples per kid: ".
 
 The completed script should print out the text `Apples per kid: 4.0`. Note that we did some manipulation with the _string_ variables too, inside the print command.
 
@@ -253,7 +253,7 @@ else:
 ```
 Depending on the value of the my_name -variable the script prints different greetings. Ann gets a special greeting, others don't. The part after `if` needs to evaluate to either `True`or `False`. If it evaluates to `True` it is executed, and if not, it is skipped. In case the if -block is followed by `else`, and the if -part was not executed, the part in else is executed instead.
 
-**Note:** Indentation. The code "inside" the if- and else-statements is indented by four spaces. Indentation is the way Python knows what parts of code are covered by the conditional statement. More generally, the indented sections are used to separate smaller semi-independent sections of code, and they will be covered more in detail next time, when we learn more about _functions_.
+> **Note:** Indentation. The code "inside" the if- and else-statements is indented by four spaces. Indentation is the way Python knows what parts of code are covered by the conditional statement. More generally, the indented sections are used to separate smaller semi-independent sections of code, and they will be covered more in detail next time, when we learn more about _functions_.
 
 ### Flow and flow control 3
 
@@ -305,7 +305,7 @@ for birth_year in birth_years:
     print(age)
 
 ```
-**Note:** In our for -loop statement we created a variable `birth_year` that exists only inside that loop. A structure like that is extremely common when iterating over a list.
+> **Note:** In our for -loop statement we created a variable `birth_year` that exists only inside that loop. A structure like that is extremely common when iterating over a list.
 
 Next, let's figure out the average age. To find the average, we'll create a _variable_ where we will sum all the values in the list and then divide it by the length of the list. There's a handy function `len()` that will get us the length (number of values stored in) of a list.
 
@@ -352,7 +352,7 @@ Now, based on the previous two examples, make a script that finds the total numb
 4. After the loop is finished print out the values in the variables holding the numbers for minors and adults.
   * Remember to pay attention to the indentation! The print -commands should not be inside the loop, so they should have no indentation.
 
-**Hints, in case you get stuck:** Often in programming we encounter situations like above where we have to count items. The typical way to do this is to have a variable that keeps tally of the total, which is modified each time an item is added. So, for the above task:
+> **Hints, in case you get stuck:** Often in programming we encounter situations like above where we have to count items. The typical way to do this is to have a variable that keeps tally of the total, which is modified each time an item is added. So, for the above task:
 
 ```python
 # let's create a variable for our minors and start the total at 0:
